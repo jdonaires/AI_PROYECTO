@@ -7,7 +7,7 @@ mysql_select_db('my_database') or die('No se pudo seleccionar la base de datos')
 
 // Realizar una consulta MySQL
 $query = 'SELECT * FROM my_table';
-$result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+$result = mysql_query($query) or die('Falla de consulta: ' . mysql_error());
 
 // Imprimir los resultados en HTML
 echo "<table>\n";
